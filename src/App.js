@@ -3,12 +3,12 @@
 import React from 'react';
 import {WeatherProvider} from './contexts/weatherContext';
 
-import Home from './views/Home';
+import Router from './router';
 
 const App = () => {
   return (
     <WeatherProvider>
-      <Home />
+      <Router />
     </WeatherProvider>
   );
 };

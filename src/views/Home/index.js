@@ -1,14 +1,15 @@
 import React from 'react';
-import {useWeatherContext} from '../../contexts/weatherContext';
+// import {useWeatherContext} from '../../contexts/weatherContext';
 
-import {Container, Title} from './styles';
+import {Container, ImageBackground, ContentView} from './styles';
 
 const Home = () => {
-  const weather = useWeatherContext();
+  // const weather = useWeatherContext();
 
   return (
     <Container>
-      <Title>{weather.weather?.city_name}</Title>
+      <ImageBackground />
+      <ContentView />
     </Container>
   );
 };
