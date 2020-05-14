@@ -45,6 +45,7 @@ const WeatherProvider = ({children}) => {
 
         // is not connected
       } else {
+        // get data on persist
         try {
           const value = await AsyncStorage.getItem('@weatherApp');
 
