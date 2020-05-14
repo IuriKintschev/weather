@@ -38,5 +38,8 @@ export function getLocalInfoByLogAndLat(
   lat: Number,
   log: Number,
 ): TypeLocalInfoByLogAndLat {
-  return Api.get('&lat=-23.682&log=-46.875&user_ip=remote');
+  const latitude = lat.toString();
+  const logitude = log.toString();
+
+  return Api.get(`&lat=${latitude}&log=${logitude}&user_ip=remote`);
 }
