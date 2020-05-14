@@ -6,16 +6,16 @@ import Api from './api';
  * Types is Returns
  */
 
-export type typeReturnApiHead = {
+export type TypeReturnApiHead = {
   temp: Number,
   date: String,
   description: String,
   condition_slug: String,
   city_name: String,
-  forecast: typeReturnApiForecast[],
+  forecast: TypeReturnApiForecast[],
 };
 
-export type typeReturnApiForecast = {
+export type TypeReturnApiForecast = {
   date: String,
   weekday: String,
   max: Number,
@@ -24,9 +24,9 @@ export type typeReturnApiForecast = {
   condition: String,
 };
 
-type typeLocalInfoByLongAndLat = {
+type TypeLocalInfoByLogAndLat = {
   data: {
-    results: typeReturnApiHead,
+    results: TypeReturnApiHead,
   },
 };
 
@@ -34,6 +34,9 @@ type typeLocalInfoByLongAndLat = {
  * Requests in API
  */
 
-export function getLocalInfoByLongAndLat(): typeLocalInfoByLongAndLat {
+export function getLocalInfoByLogAndLat(
+  lat: Number,
+  log: Number,
+): TypeLocalInfoByLogAndLat {
   return Api.get('&lat=-23.682&log=-46.875&user_ip=remote');
 }

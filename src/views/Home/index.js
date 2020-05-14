@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <Container>
-      <Title>{weather.data}</Title>
+      <Title>{weather.weather.city_name && weather.weather.city_name}</Title>
     </Container>
   );
 };
