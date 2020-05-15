@@ -42,10 +42,11 @@ yarn install
 ```
 cd /ios && pod install && cd ..
 ```
+<b>Para o android o link é feito automaticamente!</b>
 
 <br><br>
-
-<b>Para o android o link é feito automaticamente!</b>
+<b>Certifique-se que esta habilitado o GPS no emulador!</b>
+<br>
 
 > Agora bastar subir o servidor bundler e instalar o app
 
