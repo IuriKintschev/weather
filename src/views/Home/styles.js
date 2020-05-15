@@ -41,6 +41,7 @@ export const CardCity = styled.View`
   border-radius: 20px;
 
   box-shadow: 5px 5px 5px black;
+  elevation: 10;
 
   background: #444;
 
@@ -112,7 +113,7 @@ export const GrigView = styled.View`
 
 export const TileGrid = styled.View`
   width: ${SIZE.width / 3 - 25}px;
-  height: ${SIZE.width / 2 - 25}px;
+  height: 180px;
 
   justify-content: center;
   align-items: center;
@@ -122,6 +123,7 @@ export const TileGrid = styled.View`
   background: #222;
 
   box-shadow: 5px 5px 5px black;
+  elevation: 10;
 
   border-radius: 10px;
 `;

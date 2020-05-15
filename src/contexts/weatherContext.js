@@ -39,7 +39,6 @@ const WeatherProvider = ({children}) => {
       if (state.isConnected) {
         // get current Ponsition
         const location: Location = await GetLocation.getCurrentPosition({
-          enableHighAccuracy: true,
           timeout: 15000,
         });
 
