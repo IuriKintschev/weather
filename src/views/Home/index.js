@@ -23,6 +23,7 @@ import {
 } from './styles';
 
 const Home = () => {
+  // state/ hooks
   const weather = useWeatherContext();
 
   return (
@@ -42,7 +43,9 @@ const Home = () => {
                 <LottieImg
                   autoPlay={true}
                   loop={true}
-                  source={require(`../../assets/lottie/rain.json`)}
+                  source={getFileLottieByStatusApi(
+                    weather.weather.condition_slug,
+                  )}
                 />
               </LottieContainer>
               <CityContent>
