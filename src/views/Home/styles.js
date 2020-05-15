@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import {Dimensions} from 'react-native';
+import Lottie from 'lottie-react-native';
 
 import imgBackground from '../../assets/images/back.png';
 
@@ -35,13 +36,71 @@ export const CardCity = styled.View`
   width: 100%;
   height: 150px;
 
+  flex-direction: row;
+
   border-radius: 20px;
 
   box-shadow: 5px 5px 5px black;
 
   background: #444;
+
+  border-left-width: 8px;
+  border-left-color: #8844dd;
 `;
 
-export const Title = styled.Text`
-  font-size: 18px;
+export const TempView = styled.View`
+  padding: 15px;
+
+  justify-content: space-between;
+`;
+
+export const Temp = styled.Text`
+  font-size: 35px;
+  font-weight: bold;
+
+  color: #f4f4f4;
+`;
+
+export const DateCity = styled.Text`
+  font-size: 15px;
+  font-weight: bold;
+
+  color: rgba(255, 2555, 255, 0.6);
+`;
+
+export const CityView = styled.View`
+  flex: 1;
+
+  background: #222;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+`;
+
+export const CityContent = styled.View`
+  padding: 15px;
+`;
+
+export const LottieContainer = styled.View`
+  flex: 1;
+  padding: 5px;
+  align-items: flex-end;
+`;
+
+export const LottieImg = styled(Lottie)`
+  width: 100px;
+  height: 100px;
+`;
+
+export const CityLabel = styled.Text`
+  font-size: 25px;
+  font-weight: bold;
+
+  color: #fff;
+`;
+
+export const DescriptionCity = styled.Text`
+  font-size: 15px;
+  font-weight: bold;
+
+  color: rgba(255, 2555, 255, 0.8);
 `;

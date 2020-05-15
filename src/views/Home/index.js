@@ -1,11 +1,29 @@
 import React from 'react';
 import {StatusBar} from 'react-native';
-// import {useWeatherContext} from '../../contexts/weatherContext';
+import {useWeatherContext} from '../../contexts/weatherContext';
 
-import {Container, ImageBackground, ContentView, CardCity} from './styles';
+// helpers
+import {dateToScreen} from '../../helpers/dateToScreen';
+import {getFileLottieByStatusApi} from '../../helpers/lottieNameToApiStatus';
+
+import {
+  Container,
+  ImageBackground,
+  ContentView,
+  CardCity,
+  TempView,
+  Temp,
+  DateCity,
+  CityView,
+  CityLabel,
+  CityContent,
+  DescriptionCity,
+  LottieContainer,
+  LottieImg,
+} from './styles';
 
 const Home = () => {
-  // const weather = useWeatherContext();
+  const weather = useWeatherContext();
 
   return (
     <>
@@ -13,7 +31,26 @@ const Home = () => {
       <Container>
         <ImageBackground />
         <ContentView>
-          <CardCity />
+          <CardCity>
+            <TempView>
+              <Temp>{weather.weather.temp}ºC</Temp>
+              <DateCity>{dateToScreen(weather.weather.date)}</DateCity>
+            </TempView>
+
+            <CityView>
+              <LottieContainer>
+                <LottieImg
+                  autoPlay={true}
+                  loop={true}
+                  source={require(`../../assets/lottie/rain.json`)}
+                />
+              </LottieContainer>
+              <CityContent>
+                <CityLabel>{weather.weather.city_name}</CityLabel>
+                <DescriptionCity>{weather.weather.description}</DescriptionCity>
+              </CityContent>
+            </CityView>
+          </CardCity>
         </ContentView>
       </Container>
     </>
