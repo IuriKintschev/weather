@@ -1,12 +1,16 @@
 import React from 'react';
+import {StatusBar} from 'react-native';
 
 import {Container, LoadingLo} from './styles';
 
 const Loading = () => {
   return (
-    <Container>
-      <LoadingLo />
-    </Container>
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="#222" />
+      <Container>
+        <LoadingLo />
+      </Container>
+    </>
   );
 };
 

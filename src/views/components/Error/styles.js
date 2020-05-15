@@ -7,7 +7,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background: #f6f6f6;
+  background: #222;
 `;
 
 export const ErrorLot = styled(LottieView).attrs({
