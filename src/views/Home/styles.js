@@ -104,3 +104,44 @@ export const DescriptionCity = styled.Text`
 
   color: rgba(255, 2555, 255, 0.8);
 `;
+
+export const GrigView = styled.View`
+  flex: 1;
+  padding: 30px 0;
+`;
+
+export const TileGrid = styled.View`
+  width: ${SIZE.width / 3 - 25}px;
+  height: ${SIZE.width / 2 - 25}px;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 5px;
+
+  background: #222;
+
+  box-shadow: 5px 5px 5px black;
+
+  border-radius: 10px;
+`;
+
+export const GrigLabelView = styled.View`
+  padding: 10px;
+
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const DateTile = styled.Text`
+  font-size: 15px;
+
+  color: rgba(255, 2555, 255, 0.8);
+`;
+
+export const TempGid = styled.Text`
+  font-size: 15px;
+  font-weight: bold;
+
+  color: #fff;
+`;
