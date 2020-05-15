@@ -1,5 +1,5 @@
 # WeatherApp
-
+![Alt Text](https://raw.githubusercontent.com/IuriKintschev/weather/master/src/assets/gifs/weather.gif)
 ## Objetivo
 
 O intuito do App é consumir uma API que retorna informacoes climaticas. Nele é possivel visualizar a <br> previsão do tempo no periodo de 7 dias. Ao entrar no App, ira aparecer uma tela de loading, após caregar as <br> informações sera trocado para a tela principal. Caso ocorra algum erro nas consultas ou nao se não possuir <br> permissão para acessar a localização, uma tela de error sera apresentada.
