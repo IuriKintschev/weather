@@ -27,6 +27,15 @@ A como a aplicação é simples não faria sentido utilizar redux, redux-saga, o
 
 ## Como Consigo rodar ?
 
+### Gere a chave para a API
+
+> <b>No site https://hgbrasil.com/status/weather realise o cadastro e gere uma chave gratis, e crie um arquivo .env <br> na raiz do projeto e insira o seguinte conteudo</b>
+
+````
+KEY_API=chave-aqui
+````
+- possue um aquivo .exemple.env se preferir!
+
 <b> Clone o repositório e instale as dependências rodando os seguintes comandos! </b>
 
 > Instale as dependências do node
